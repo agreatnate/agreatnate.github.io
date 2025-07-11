@@ -1,0 +1,848 @@
+/*
+----------------------------------------------------------------------------
+GRAMPS Cascading Style Sheet
+Style Name: Mainz
+Style Author: Jason Simanek (2008)
+
+----------------------------------------------------------------------------
+This website was created with GRAMPS
+----------------------------------------------------------------------------
+GRAMPS is a Free Software Project for Genealogy, offering a professional
+genealogy program, and a wiki open to all. It is a community project, created,
+developed and governed by genealogists.
+
+Go to <http://gramps-project.org/> to learn more!
+
+License
+----------------------------------------------------------------------------
+Copyright 2008 Jason M. Simanek
+Copyright 2009 Stephane Charette
+Copyright (C) 2008-2011 Rob G. Healey <robhealey1@gmail.com>
+Copyright 2011 Michiel D. Nauta
+Copyright 2018 Theo van Rijn
+Copyright (C) 2019      Serge Noiraud
+
+This file is part of the GRAMPS program.
+
+GRAMPS is free software: you can redistribute it and/or modify it under the
+terms of the GNU General Public License as published by the Free Software
+Foundation, version 2 of the License.
+
+GRAMPS is distributed in the hope that it will be useful, but WITHOUT ANY
+WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR
+A PARTICULAR PURPOSE. See the GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License along with
+GRAMPS. If not, see <http://www.gnu.org/licenses/>.
+----------------------------------------------------------------------------
+
+
+Color Palette
+----------------------------------------------------------------------------
+black                           #000
+brown                           #7D5925
+brown light                     #D8C19F
+green                           #767D25
+yellow                          #FFF2C6
+yellow light                    #FFFFE7
+----------------------------------------------------------------------------
+
+
+Style Images
+----------------------------------------------------------------------------
+Body                    images/Web_Mainz_Bkgd.png
+Header                  images/Web_Mainz_Header.png
+Middle                  images/Web_Mainz_Mid.png
+Middle Light            images/Web_Mainz_MidLight.png
+----------------------------------------------------------------------------
+
+
+ NarrativeWeb Styles
+-------------------------------------------------------------------------------------------- 
+
+General Elements
+-----------------------------------------------------------------*/
+body {
+    font-family: Georgia, serif;
+    font-size: 120%;
+    color: #7D5925;
+    background: url(../images/Web_Mainz_Bkgd.png) black repeat;
+}
+body > div {
+    width: 85%;
+    margin: 0px auto;
+    overflow: hidden;
+}
+#outerwrapper {
+    margin: 5px auto;
+    width: 98%;
+}
+#outerwrapper > div {
+    clear: both;
+}
+.content {
+    padding: 1.5em 1.5em;
+    background: url(../images/Web_Mainz_Mid.png) #FFF2C6 repeat;
+}
+#ThumbnailPreview div.snapshot {
+    float: right;
+    margin: 0;
+}
+div.snapshot div.thumbnail {
+    text-align: center;
+}
+div.snapshot a {
+    display: inline;
+}
+/* Less whitespace on smaller real estate. */
+@media only screen and (max-width: 1080px) {
+    .content {
+        padding: 0em 0.5em;
+    }
+}
+
+
+/* General Text
+-----------------------------------------------------------------*/
+h1 {
+    font-weight: normal;
+    font-style: italic;
+    margin-left: 2em;
+}
+h2 {
+    display:block;
+    margin:0;
+    padding:0;
+    text-align: center;
+}
+h3 {
+    font-size: xx-large;
+    font-weight: normal;
+    font-style: italic;
+    color: #767D25;
+    text-align: center;
+    border-bottom: double 4px #7D5925;
+    padding-bottom: 1ex;
+    margin: 0.5em 0px 0.5em 0px;
+}
+h4 {
+    font-size: x-large;
+    font-weight: normal;
+    font-style: italic;
+    color: black;
+    text-align: center;
+    border-bottom: dashed 1px #7D5925;
+    padding-bottom: 0.5ex;
+    margin: 0.5em 0px 0.5em 0px;
+}
+a {
+    color: #7D5925;
+    text-decoration: none;
+    word-wrap: break-word;
+}
+a[href]:hover, a[href]:active {
+    color: #0000F9;
+    background-color: #FFFFE7;
+}
+a:visited {
+   color:  #0D0000;
+}
+.grampsid {
+    font-family: monospace;
+    font-size: smaller;
+}
+
+/* Header
+-----------------------------------------------------------------*/
+#header {
+    padding-top: 5em;
+    background: url(../images/Web_Mainz_Header.png) repeat-x top left;
+}
+
+/* Navigation
+-----------------------------------------------------------------*/
+div#nav, #subnavigation {
+    background: url(../images/Web_Mainz_MidLight.png) #FFF2C6 repeat;
+}
+div#nav ul, #subnavigation ul {
+    list-style-type: none;
+    margin: 0px;
+    padding-left: 0px;
+}
+div#nav ul li, #subnavigation ul li {
+    float: left;
+}
+div#nav ul li a, #subnavigation ul li a {
+    display: run-in;
+    padding: 0.4em 0.8em 0.3em 0.8em;
+    font-size: smaller;
+    font-family: sans-serif;
+}
+div#nav ul li a:hover, #subnavigation ul li a:hover {
+    text-decoration: none;
+    background-color: #FFFFE7;
+}
+div#nav ul li.CurrentSection a, #subnavigation ul li.CurrentSection a {
+    font-weight: bold;
+    font-style: italic;
+    background-image: url(../images/Web_Mainz_Mid.png);
+    border-style: dashed;
+    border-width: 1px 1px 0px 1px;
+    border-color: #7D5925;
+}
+#subnavigation ul li.CurrentSection a {
+    border-width: 0px 1px 1px 1px;
+}
+
+/* Alphabet Navigation
+-----------------------------------------------------------------*/
+div#alphanav ul {
+    list-style: none;
+    border-width: 2px 0px 4px 0px;
+    border-style: solid;
+    border-color: black;
+    padding-left: 2em;
+    /* float container stretch, see www.quirksmode.org/css/clearing.html */
+    overflow: hidden;
+}
+div#alphanav ul li {
+    float: left;
+    font-size: larger;
+    font-family: sans-serif;
+    font-weight: bold;
+}
+div#alphanav ul li:after {
+    content: " |";
+}
+div#alphanav ul li a {
+    display: block;
+    padding: 4px 8px;
+    line-height: 100%;
+    float: left;
+    color: black;
+}
+div#alphanav ul li a:hover {
+    text-decoration: none;
+    background-color: black;
+    color: white;
+}
+
+/* Responsive navigation */
+a.navIcon {
+    display: none;
+}
+
+div#header::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+div#nav::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+@media only screen and (max-width: 1080px) {
+
+    /* Use less & all realestate on mobiles. */
+    div#outerwrapper {
+        margin: 5px auto;
+        width: 100%;
+    }
+
+    .nav {
+        background: none; /* Works in IE too. */
+/*
+        width: 200px;
+        position: absolute;
+        z-index: 10;
+*/
+    }
+
+    /* Undo some of the #nav styles  - to enable the class .nav */
+    .nav ul, #subnavigation ul {
+        list-style: none;
+        min-width: unset;
+        width: 200px;
+        height: 32px;
+        margin: 0;
+        padding: 0;
+    }
+    .nav ul li, #subnavigation ul li {
+        float: unset;
+        display: unset
+    }
+
+    /* Start with hidden menu options */
+    /* .nav li:not(:first-child) {display: none;} */
+    .nav li {display: none;}
+    .nav ul {display: none;}
+
+    a.navIcon {
+        font-size:1.3em;
+        display: block;
+        margin: 0.1em 0.4em 0.4em 0.4em;
+        float: left;
+    }
+
+    .nav.responsive {position: absolute; display: block; z-index: 100;}
+    .nav.responsive a.icon {
+        position: absolute;
+        right: 0;
+        top: 0;
+        margin-right: 10px;
+    }
+    .nav.responsive li {
+        /* float: left; */
+        display: block;
+        text-align: left;
+        background-color: #D8C19F;
+        /* required by IE */
+        float: left;
+        clear: both;
+        width: 200px;
+    }
+
+    div#nav ul, #subnavigation ul {
+        padding-left: 0px;
+    }
+
+    .content {
+        padding: 0em 0.5em;
+    }
+}
+
+/* Main Table
+-----------------------------------------------------------------*/
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+div#summaryarea > table.infolist,
+div#parents > table.infolist,
+h3 + table.infolist {
+    width: auto;
+}
+table th {
+    text-align: left;
+    margin: 0px;
+    border-bottom: double 4px #7D5925;
+    padding: .1em 10px;
+}
+table td {
+    vertical-align: top;
+    padding: .1em 10px;
+}
+table.primobjlist td {
+    vertical-align: middle;
+}
+table.primobjlist tr a {
+    display: block; /* make whole td clickable */
+}
+table.primobjlist tr.BeginLetter td, table.primobjlist tr.BeginSurname td {
+    border-top: dashed 1px #D8C19F;
+}
+td.ColumnLetter, td.ColumnRowLabel {
+    font-weight: bold;
+}
+td.ColumnBirth, td.ColumnDeath, td.ColumnPartner, td.ColumnParents {
+    font-size: 90%;
+}
+table.relationships td.ColumnPartner {
+    font-size: 100%;
+}
+table.infolist tr td ol {
+    margin: 0px;
+}
+#summaryarea table.infolist td.ColumnAttribute,
+#parents table.infolist td.ColumnAttribute,
+#families table.infolist td.ColumnType,
+#families table.infolist td.ColumnAttribute {
+    color: #767D25;
+}
+/* div summaryarea is missing for events, sources and repos! */
+h3 + table.infolist td.ColumnAttribute {
+    color: #767D25;
+}
+
+table.primobjlist td.ColumnParents span.father, table.primobjlist td.ColumnParents span.mother {
+    display: block;
+}
+table.primobjlist td.ColumnParents span.mother:before, table.primobjlist td.ColumnPerson span.mother:before {
+    content: "+ ";
+}
+
+/* Surnames
+-----------------------------------------------------------------*/
+table#SortByName thead th.ColumnSurname a:after,
+table#SortByCount thead th.ColumnQuantity a:after {
+    content: " \2193";
+}
+#SurnameDetail h3 {
+    border-bottom-width: 0px;
+    padding-bottom: 0px;
+    margin: 0px;
+}
+
+/* Events
+-----------------------------------------------------------------*/
+#EventList tr.BeginType td {
+    border-top: dashed 1px #D8C19F;
+}
+#EventList tr.BeginLetter td {
+    border-top: solid 1px #D8C19F;
+}
+/* Events with multiple participants should have a comma seperated list of
+   names*/
+#EventList td.ColumnPerson a {
+    display: inline;
+}
+/* Family events, put mother on next line */
+#EventList td.ColumnPerson span.father,
+#EventList td.ColumnPerson span.mother,
+#EventDetail td.ColumnPerson span.father,
+#EventDetail td.ColumnPerson span.mother {
+    display: block;
+}
+#EventList td.ColumnPerson span.person:after,
+#EventList td.ColumnPerson span.father:after,
+#EventList td.ColumnPerson span.mother:after,
+#EventDetail td.ColumnPerson span.person:after,
+#EventDetail td.ColumnPerson span.father:after,
+#EventDetail td.ColumnPerson span.mother:after {
+    content: ", ";
+}
+#EventList td.ColumnPerson span.person:last-child:after,
+#EventList td.ColumnPerson span.father:last-child:after,
+#EventList td.ColumnPerson span.mother:last-child:after,
+#EventDetail td.ColumnPerson span.person:last-child:after,
+#EventDetail td.ColumnPerson span.father:last-child:after,
+#EventDetail td.ColumnPerson span.mother:last-child:after {
+    content: "";
+}
+
+table.eventlist tbody tr td.ColumnSources {
+    width: 5%;
+}
+
+/* Gallery
+-----------------------------------------------------------------*/
+#GalleryNav {
+    text-align: center;
+    margin: 1.4em 0px;
+}
+#GalleryNav a {
+    font-weight: bold;
+    font-style: italic;
+    color: #FFF2C6;
+    background: url(../images/Web_Mainz_Bkgd.png) #7D5925 repeat;
+    border: outset 3px black;
+}
+#GalleryNav a:hover {
+    border-color: #7D5925;
+}
+#GalleryNav a:active {
+    border-style: solid;
+}
+#GalleryNav a#Previous {
+    padding: .4em .7em .3em .7em;
+}
+#GalleryNav a#Next {
+    padding: .4em 1.9em .3em 1.9em;
+}
+#GalleryPages {
+    margin: 0 1em;
+}
+#GalleryCurrent {
+    font-size: x-large;
+    font-weight: normal;
+    font-style: italic;
+}
+#GalleryTotal {
+    font-weight: normal;
+}
+#GalleryDisplay {
+    margin: 0px auto;
+    position: relative;
+}
+#GalleryDisplay img {
+    margin: 0px auto;
+    display:block;
+    border: solid 1px #7D5925;
+    max-width: 800px;
+    height: auto;
+}
+
+@media only screen and (max-width: 1080px) {
+    #GalleryDisplay img {
+        max-width: 100%;
+    }
+}
+
+/*    Sources
+------------------------------------------------------ */
+div#SourceDetail {
+    margin: 0 auto;
+}
+
+/* Contact
+-----------------------------------------------------------------*/
+#Contact h3 {
+    border-bottom-width: 0px;
+    padding-bottom: 0px;
+    margin: 0px;
+}
+#Contact #summaryarea #GalleryDisplay img {
+    display: block;
+    margin: 0px auto 1em auto;
+    border: solid 1px #7D5925;
+}
+#Contact #researcher {
+    text-align: center;
+}
+#Contact #researcher span {
+    font-size: larger;
+}
+#Contact #streetaddress, #Contact #locality, #Contact #email {
+    display: block;
+}
+#Contact #city:after {
+    content: ",";
+}
+
+/* Download
+-----------------------------------------------------------------*/
+#Download table.download a {
+    display: block;
+}
+
+/* SubSection
+-----------------------------------------------------------------*/
+#Home #GalleryDisplay, #Introduction #GalleryDisplay, #Contact #GalleryDisplay {
+    float: right;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+#Home #GalleryDisplay img, #Introduction #GalleryDisplay img,
+      #Contact #GalleryDisplay {
+    display: block;
+    max-width: 950px;
+    height: auto;
+    float: right;
+}
+@media only screen and (max-width: 1080px) {
+    #Home #GalleryDisplay img, #Introduction #GalleryDisplay img,
+          #Contact #GalleryDisplay {
+        margin: 0 auto;
+        max-width: 100%;
+    }
+}
+#Home a, #Introduction a, #Contact a {
+    color: black;
+}
+.subsection {
+    clear: both;
+    overflow: hidden;
+}
+.subsection p {
+    margin: 0px;
+}
+
+/* SubSection : Families
+-----------------------------------------------------------------*/
+div#families table.fixed_subtables table.eventlist {
+    table-layout: fixed;
+}
+div#families table.fixed_subtables table.eventlist th:first-child {
+    width: 9em;
+}
+div#families table.fixed_subtables table.eventlist th:last-child {
+    width: 5em;
+}
+div#families .infolist h4 {
+    text-align: left;
+}
+
+/* SubSection : Gallery
+-----------------------------------------------------------------*/
+#gallery {
+    background-color: green;
+}
+#indivgallery {
+    background-color: white;
+}
+#gallery .gallerycell {
+    float: left;
+    width: 130px;
+    height: 150px;
+    text-align: center;
+    margin: 0;
+    background-color: white;
+    border-top: solid 1px #999;
+    border-right: solid 1px #999;
+}
+#gallery .thumbnail {
+    font-size: smaller;
+    margin: 3em auto;
+}
+#indivgallery {
+    /* float container stretch, see www.quirksmode.org/css/clearing.html */
+    overflow: hidden;
+}
+#indivgallery .thumbnail {
+    float: left;
+    width: 130px;
+    font-size: smaller;
+    text-align: center;
+    margin: 0.5em;
+    background-color: white;
+}
+#indivgallery img {
+    border: solid 1px #7D5925;
+}
+#indivgallery span {
+/* ## remove this line and the comment markers from the line below to hide the description in Individual Gallery
+    display: none; */
+}
+#gallery div.indexno {
+    float: right;
+    width: 1.8em;
+    font-size: large;
+    text-align: center;
+    background-color: #CCC;
+    color: #555;
+    margin: 0;
+}
+#indivgallery div.date {
+    float: right;
+    width: 1.8em;
+    font-size: large;
+    text-align: center;
+    background-color: #CCC;
+    color: #555;
+}
+#indivgallery .thumbnail ul {
+    font-size: smaller;
+    list-style: none;
+    padding: 0px;
+}
+#indivgallery .thumbnail ul li:first-child {
+    border-style: none;
+}
+#indivgallery .thumbnail ul li {
+    border-top: dashed 1px #CCC;
+    border-top-style: dashed;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+}
+#gallery img {
+    border: solid 1px #999;
+}
+div.snapshot div.thumbnail {
+    text-align: center;
+}
+
+/* SubSection : Narrative
+-----------------------------------------------------------------*/
+h4 + div.grampsstylednote, a.familymap {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+i + div.grampsstylednote p {
+    margin: 0 0 0.3em 0;
+}
+div.grampsstylednote p {
+    margin-bottom: 0.5em;
+}
+
+/* SubSection : Source References
+-----------------------------------------------------------------*/
+#sourcerefs ol li ol {
+    list-style-type: lower-alpha;
+}
+
+/* SubSection : Pedigree
+-----------------------------------------------------------------*/
+.pedigreegen {
+    list-style-type: none;
+    padding-left: 10px;
+}
+.pedigreegen li ol {
+    list-style-type: none;
+}
+.pedigreegen li ol li ol {
+    list-style-type: decimal;
+}
+.pedigreegen ol.spouselist {
+    list-style-type: none;
+}
+.pedigreegen ol.spouselist li.spouse ol {
+    list-style-type: decimal;
+}
+.spouse:before {
+    content: "+ ";
+}
+.thisperson {
+    font-weight: bold;
+}
+.thisperson > ol {
+    font-weight: normal;
+}
+
+/* Footer
+-----------------------------------------------------------------*/
+#footer {
+    clear: both;
+    overflow: hidden;
+    width: 100%;
+    background: url(../images/Web_Mainz_MidLight.png) #FFF2C6;
+    font-family: sans-serif;
+}
+#footer p#createdate {
+    float: left;
+    width: 50%;
+    text-align: left;
+    margin-left: 10px;
+}
+#footer p#copyright {
+    float: right;
+    width: 40%;
+    text-align: right;
+}
+#footer p#copyright img {
+    float: right;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    vertical-align: middle;
+}
+#footer > * {
+    font-size: 80%;
+    background: url(../images/Web_Mainz_MidLight.png) #FFF2C6;
+}
+
+/* Overwritten
+-----------------------------------------------------------------*/
+button#drop {
+    font-style: italic;
+    color: #FFF2C6;
+    background: url(../images/Web_Mainz_Bkgd.png) #7D5925 repeat;
+    border: outset 3px black ! important;
+}
+div#map_canvas {
+    border-color: #7D5925 ! important;
+}
+
+/* Calendar Styles
+=================================================================*/
+table.calendar {
+    table-layout: fixed;
+    empty-cells: show;
+    margin: 0px auto;
+    background: url(../images/Web_Mainz_Mid.png) #FFF2C6 repeat;
+}
+.calendar thead th {
+    font-size: large;
+    font-weight: normal;
+    font-style: italic;
+    text-align: center;
+}
+.calendar thead th.monthName {
+    font-size: xx-large;
+    color: #767D25;
+    border-bottom-color: #7D5925;
+}
+.calendar thead th abbr {
+    border-bottom-style: none;
+}
+#CreatorInfo {
+    float: right;
+    margin: -1em 0px 0px 0px;
+    font-weight: bold;
+    font-style: italic;
+}
+.calendar tfoot td {
+    border-top: double 4px #7D5925;
+}
+
+/* Calendar : Date Numeral */
+.calendar div.date {
+    float: right;
+    width: 1.8em;
+    font-size: large;
+    font-style: italic;
+    text-align: center;
+    background: url(../images/Web_Mainz_MidLight.png) #FFF2C6 repeat;
+}
+
+/* Calendar : Date Container */
+.calendar td {
+    padding: 0px;
+    border-width: 1px 0px 0px 1px;
+    border-style: dashed;
+    border-color: #7D5925;
+}
+.calendar td.weekday {
+    background: url(../images/Web_Mainz_Mid.png) #FFF2C6 repeat;
+}
+.calendar td.weekend {
+    background: url(../images/Web_Mainz_MidLight.png) #FFF2C6 repeat;
+}
+.calendar td:first-child {
+    border-left-style: none;
+}
+.calendar tbody tr:first-child td {
+    border-top-style: none;
+}
+
+/* Calendar : Date Detail */
+.calendar td ul {
+    font-size: smaller;
+    list-style: none;
+    padding: 0px;
+}
+.calendar td ul li {
+    margin: 0 4%;
+    border-top: dashed 1px #D8C19F;
+}
+.calendar td ul li:first-child {
+    border-style: none;
+}
+
+/* Calendar : Birthday, Anniversary, Highlight */
+.calendar td ul li em {
+    font-style: normal;
+    color: #767D25;
+}
+.calendar td ul li span.yearsmarried em {
+    color: black;
+}
+.calendar td.highlight div.date {
+    color: #767D25;
+    background-image: none;
+    background-color: #FFFFE7;
+}
+
+/* Calendar : Previous-Next Month */
+.calendar td.previous, .calendar td.next {
+    color: #D8C19F;
+    background: url(../images/Web_Mainz_MidLight.png) #FFF2C6 repeat;
+}
+
+/* Calendar : Full Year */
+body#fullyearlinked table.calendar {
+    float: left;
+    width: 315px;
+    height: 18em;
+    border: solid 1px #7D5925;
+}
+body#fullyearlinked table.calendar thead th {
+    height: 2em;
+}
+body#fullyearlinked table.calendar thead th.monthName {
+    font-size: large;
+}
+body#fullyearlinked table.calendar tbody td {
+    height: 3em;
+}

@@ -1,0 +1,24 @@
+#!/bin/tcsh -f
+
+if ($2 == "") then
+   echo "Usage $0  cmdFile files to process";
+   echo "Script to execute nawk with sed cmdfile file on all following files
+else
+  set cmdFile = $1;
+  shift
+  echo "using cmdFile $cmdFile";
+endif
+
+while ($1 != "")
+  echo "Processing file $1";
+  nawk -f $cmdFile $1 > .tmpXZr0;
+  if ($status) then
+    echo "Error occurred applying nawk file $cmdFile on file $1 !"
+    exit;
+  else
+    mv .tmpXZr0 $1
+    shift
+  endif
+end
+
+echo "All files processed"
