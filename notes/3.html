@@ -1,0 +1,89 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+  <title>Nathan McNew: Stepping Stones in R</title>
+  <meta http-equiv="content-type" content="text/html; charset=ISO-8859-1">
+  <meta name="author" content="Nathan McNew">
+  <meta name="robots" content="index">
+  <meta name="robots" content="follow">
+</head>
+
+<body text="#00000" bgcolor="#dbd1af" alink="#c0c0c0" vlink="#40AF00" link="#225D00">
+  <table width="99%" border="0" cellspacing="0" cellpadding="2">
+    <tr bgcolor="#589200">
+      <td valign="top" colspan="3"> <b><Font Size = 5 >Nathan McNew: Notes</font></b><br></td>
+    </tr>
+    <tr>
+      <td colspan="2"> <font size="-1"><b><a href="../index.html">Home</a> >> <a href="../notes.html">Notes</a> >> Note #2 </b></font></td>
+    </tr>
+    <tr>
+<!-- Left column -->
+      <td valign="top" width="17%" bgcolor="#E6CA94">
+        <table width="100%" border="0" cellspacing="0" cellpadding="2">
+          <tr>
+            <td bgcolor="#589200"><b>Index</b></td>
+          </tr>
+          <tr bgcolor="#e1cb96">
+            <td style="vertical-align: top; height: 100%;"> 
+			     <p> <a href="http://www.nathanmcnew.com/index.html">Home</a> </p>
+              <p> <a href="../math.html">Research</a> </p>
+	      <p> <a href="../teaching.html">Teaching</a></p>
+	      <p> <a href="../notes.html">Notes</a></p>
+  	      <p> <a href="../about_me.html">Contact Info</a> </p>
+            </td>
+          </tr>
+        </table>
+      </td>
+<!-- Center column -->
+      <td valign="top" width="2" bgcolor="#DED2AC"> <br></td>
+<!-- Right column, content --> 
+		<td valign="top" width="83%" bgcolor="#E6CA94">
+        <table width="100%" border="0" cellspacing="0" cellpadding="0">
+        <tr><td>
+        <table width="100%">
+          <tr>
+            <td width="13%" bgcolor="#589200"><b> <a href="2.html"> <font color="#FFFFFF"> << Previous </font></a></b></td>
+            <td bgcolor="#589200"><b> <Font size=5> <center> Undergraduate research: Geometric progressions in number fields </center></Font></b></td>
+            <td width="13%" bgcolor="#589200" align="right"><b> <a href="4.html"> <font color="#FFFFEE"><right>Next >> </right></font></a></b></td>
+          </tr>
+        </table></td></tr>
+          <tr bgcolor="#e1cb96">
+<td> <center> December 7, 2014 </center></td></tr>
+          <tr bgcolor="#e1cb96">
+            <td style="padding:20px;" valign="top" align="left">
+<font size=4>
+This past summer I had a wonderful time working on a research project with a group of talented undergraduates at the <a href="http://math.williams.edu/small/">SMALL REU</a> at Williams College.  Together we were attempting to generalize some of <a href="http://www.nathanmcnew.com/GPFsets.pdf">my work</a> on sets of integers which avoid geometric progressions.  The original question I looked at was essentially "How large can a subset of the integers be and not contain any three term geometric progressions?" Having made some progress on that problem we were curious to see whether the ideas and results would apply in other rings beside the integers.  In particular, we investigated what happens when looking at subsets of the algebraic integers in a quadratic number field.  
+<p>
+If you've never heard of quadratic number fields before, don't give up on me just yet, they aren't that scary.  If you take the integers and make all of the possible fractions out of them you get what we call the rational numbers, sometimes written as &#x211A;.  The rational numbers are great, in fact they are what we call a <b>field </b> meaning we can add, subtract, multiply or divide them, and still get another rational number.  
+<p>
+Sometimes though, the rational numbers aren't quite big enough.  For example, you want to be able to take a square root, but you end up with something that isn't a rational anymore.  You could go and use the real numbers (or you might need the complex numbers, if you want to take a square root of a negative number) but the real numbers aren't just a little bit bigger, they're a <b>lot</b> bigger.  
+<p>
+So suppose you don't want to go all the way to the real numbers.  Maybe you just need to take the square root of two.  You might just take the rational numbers and include the square root of two, but that wouldn't be a field anymore, because if you add 1 to the squareroot of two you get another thing that isn't rational.  Or if you multiply that by 3 and so on.  It turns out that if you take all of the numbers of the form a+b&radic;<span style="text-decoration: overline">2</span> where a and b can be any rational number you again have a field.  We write this field as &#x211A;(&radic;<span style="text-decoration: overline">2</span>).
+<p>
+This field we get is called a number field.  In fact it is a quadratic number field field because we got it by throwing in a square root of a rational. If we threw in a cube root instead we'd get a cubic number field and so on. One of the many nice things about quadratic fields is that every one of them can be found by constructing &#x211A;(&radic;<span style="text-decoration: overline">n</span>) for some integer n.
+<p> 
+Now, when you go and make the rationals bigger, it turns out that the integers get bigger too. In fact, if we are working in &#x211A;(&radic;<span style="text-decoration: overline">2</span>) we have to start thinking of numbers like 1+&radic;<span style="text-decoration: overline">2</span> as being integers as well.  We call the set of all of the new integers we get the "Ring of algebraic integers."
+<p>
+This object, the ring of algebraic integers, was where we wanted to ask our new question.  Now, we wanted to know, "how large a subset of the ring of algebraic integers over a quadratic number field can you take and avoid three-term geometric progressions?"
+<p>
+We found that many of the same ideas from the integers could be carried over.  The details can be found in our paper which is available on the arXiv, submitted for publication, and also available <a href="http://nathanmcnew.com/Ramsey11">here.</a>  
+<p>
+One of the most interesting questions we looked at though, was "How big is the greedy set of algebraic integers?"  The greedy set is constructed by including all of the small integers until the first time you try to include a number which would create a progression.  Whenever that happens you skip the number and move on to including larger numbers that don't create a geometric progression.  Over the integers the greedy set contains about 72% of the integers.  Over different quadratic number fields this percentage can range anywhere from 51% to 94% and has a striking distribution, a histogram of the different densities for quadratic number fields &#x211A;(&radic;<span style="text-decoration: overline">-n</span>) for  0 < n < 10000 is below.
+
+<center><img border="0" style="width: 400px; height: 400px;" alt="Histogram of densities" title="Histogram of densities" src="denshist.png"></center>
+
+            </td>
+</tr><tr>
+<td colspan=3> <center><a href="../notes.html"><b>List of Notes</b></a></center></td>
+          </tr>
+        </table>
+
+      </td>
+    </tr>
+  </table>
+  <center><hr width="100%" size="1"><font size="-1">
+    <br>Copyright &copy 2014 Nathan McNew
+  </font></center>
+</body>
+</html>
+

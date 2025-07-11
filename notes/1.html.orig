@@ -1,0 +1,67 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+  <title>Nathan McNew: Notes</title>
+  <meta http-equiv="content-type" content="text/html; charset=ISO-8859-1">
+  <meta name="author" content="Nathan McNew">
+  <meta name="robots" content="index">
+  <meta name="robots" content="follow">
+</head>
+
+<body text="#00000" bgcolor="#dbd1af" alink="#c0c0c0" vlink="#40AF00" link="#225D00">
+  <table width="100%" border="0" cellspacing="0" cellpadding="2">
+    <tr bgcolor="#589200">
+      <td valign="top" colspan="3"> <b><Font Size = 5 >Nathan McNew: Notes</font></b><br></td>
+    </tr>
+    <tr>
+      <td colspan="2"> <font size="-1"><b><a href="../index.html">Home</a> >> <a href="../notes.html">Notes</a> >> Note #1 </b></font></td>
+    </tr>
+    <tr>
+<!-- Left column -->
+      <td valign="top" width="17%" bgcolor="#E6CA94">
+        <table width="100%" border="0" cellspacing="0" cellpadding="2">
+          <tr>
+            <td bgcolor="#589200"><b>Index</b></td>
+          </tr>
+          <tr bgcolor="#e1cb96">
+            <td style="vertical-align: top; height: 100%;"> 
+			     <p> <a href="http://www.nathanmcnew.com/index.html">Home</a> </p>
+              <p> <a href="../math.html">Research</a> </p>
+	      <p> <a href="../teaching.html">Teaching</a></p>
+	      <p> <a href="../notes.html">Notes</a></p>
+  	      <p> <a href="../about_me.html">Contact Info</a> </p>
+            </td>
+          </tr>
+        </table>
+      </td>
+<!-- Center column -->
+      <td valign="top" width="2" bgcolor="#DED2AC"> <br></td>
+<!-- Right column, content --> 
+		<td valign="top" width="83%" bgcolor="#E6CA94">
+        <table width="100%" border="0" cellspacing="3" cellpadding="2">
+          <tr>
+            <td width="10%" bgcolor="#589200"><b> <a href="1.html"> <font color="#FFFFFF"> << Previous </font></a></b></td>
+            <td bgcolor="#589200"><b> <Font size=5> <center> Welcome, audience of none </center></Font></b></td>
+            <td width="10%" bgcolor="#589200" align="right"><b> <a href="2.html"> <font color="#FFFFEE">Next >> </font></a></b></td>
+          </tr>
+          <tr bgcolor="#e1cb96">
+<td colspan=3> <center> December 29, 2013 </center></td></tr>
+          <tr bgcolor="#e1cb96">
+            <td style="padding:20px;" colspan=3 valign="top" align="left">
+<font size=4>I've wanted for awhile to have a place to post random things I've been thinking about/working on/pondering. A blog of sorts I suppose, but I've intentionally chosen not to use a traditional blog interface. Partially because I dislike the format, but also because I don't really see this as a blog. I don't expect to have any followers or for my friends to read it to stay up on my life. I don't intend to share it on Facebook for now, maybe at some point in the future if I think some note is  uncharacteristically interesting to a general audience. With posts  mostly about theoretical math or Linux (maybe a few about faith or philosophy) I think these notes will be of greater interest to the wayfaring Googler.
+<p>
+So, to my audience of none: welcome. Hopefully it won't be the frequency of posts here that most resembles a blog. Maybe one day I'll add the ability to comment, but probably not.
+</font>
+            </td>
+</tr><tr>
+<td colspan=3> <center><a href="../notes.html"><b>List of Notes</b></a></center></td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+  </table>
+  <center><hr width="100%" size="1"><font size="-1">
+    <br>Copyright &copy 2013 Nathan McNew
+  </font></center>
+</body>
+</html>
